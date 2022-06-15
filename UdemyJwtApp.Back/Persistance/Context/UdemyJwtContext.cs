@@ -1,5 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using UdemyJwtApp.Back.Core.Domain;
+using UdemyJwtApp.Back.Persistance.Configurations;
 
 namespace UdemyJwtApp.Back.Persistance.Context
 {
@@ -16,7 +17,8 @@ namespace UdemyJwtApp.Back.Persistance.Context
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-
+            modelBuilder.ApplyConfiguration(new AppUserConfiguration());
+            modelBuilder.ApplyConfiguration(new ProductConfiguration());
             base.OnModelCreating(modelBuilder);
         }
 

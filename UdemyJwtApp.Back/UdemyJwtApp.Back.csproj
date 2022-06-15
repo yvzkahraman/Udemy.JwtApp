@@ -23,7 +23,6 @@
   <ItemGroup>
     <Folder Include="Core\Application\" />
     <Folder Include="Persistance\Migrations\" />
-    <Folder Include="Persistance\Configurations\" />
     <Folder Include="Persistance\Repositories\" />
   </ItemGroup>
 
